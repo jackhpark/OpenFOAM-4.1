@@ -41,7 +41,7 @@ surfaceScalarField phi
         runTime.timeName(),
         mesh,
         IOobject::READ_IF_PRESENT,
-        IOobject::AUTO_WRITE
+        IOobject::NO_WRITE
     ),
     fvc::flux(U)
 );
